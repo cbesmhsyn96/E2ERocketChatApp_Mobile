@@ -1,0 +1,18 @@
+
+
+# Wait for start screen elements
+* Wait until the element with key "StartScreenRocketChatLogo" is visible
+* Wait until the element with key "StartScreenAddWSHeader" is visible
+* Wait until the element with key "StartScreenWSURLInput" is clickable
+
+# Verify that the Connect button is disabled
+* Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "false"
+
+# Type <text> into Workspace URL input
+* Type into the element with key "StartScreenWSURLInput" the text <text>
+
+# Verify that the Connect button is enabled
+* Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "true"
+
+# Click the Connect button
+* Click the element with key "StartScreenConnectButton"
