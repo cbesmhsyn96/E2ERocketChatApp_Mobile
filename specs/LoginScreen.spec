@@ -16,16 +16,14 @@ Login Scenarios
 Valid Login Test
 ---------------------------------------------------------------
 * Iteration <iteration> başlatıldı
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Login butonuna tıkla
-* Login ekranının açılmasını bekle
-* Login ekranının açıldığını kontrol et
+* Login ekranı açılmalı
 * Login ekranında Login butonunun disable olduğunu kontrol et
 * Login with random Excel user
 * Login ekranında Login butonunun enable olduğunu kontrol et
@@ -39,16 +37,14 @@ Valid Login Test
 Invalid Login Test
 ---------------------------------------------------------------
 * Iteration <iteration> başlatıldı
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Login butonuna tıkla
-* Login ekranının açılmasını bekle
-* Login ekranının açıldığını kontrol et
+* Login ekranı açılmalı
 * Login ekranında Login butonunun disable olduğunu kontrol et
 * Login ekranında Username or email alanına geçersiz değerler gir
 * Login butonuna tıkla

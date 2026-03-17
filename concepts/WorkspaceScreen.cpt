@@ -1,16 +1,19 @@
-# Workplace url ekranının elementlerini bekle
+# Workplace url ekranı açılmalı
 * Wait until the element with key "StartScreenRocketChatLogo" is visible
 * Wait until the element with key "StartScreenAddWSHeader" is visible
 * Wait until the element with key "StartScreenWSURLInput" is visible
 
-# Connect butonunun enabled özelliğinin false olduğu kontrol et
+# Connect butonu pasif olmalı
 * Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "false"
 
-# Connect butonunun enabled özelliğinin true olduğunu kontrol et
+# Connect butonu aktif olmalı
 * Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "true"
 
 # Geçerli Workspace URL gir
 * Type into the element with key "StartScreenWSURLInput" the text "http://10.0.2.2:3001"
+
+# Workspace URL in hatırlandığını kontrol et
+* Verify that the element with key "StartScreenWSURLInput" contains "http://10.0.2.2:3001"
 
 # Geçersiz Workspace URL gir
 * Type into the element with key "StartScreenWSURLInput" the text "test"

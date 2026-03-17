@@ -11,30 +11,26 @@ Specification Heading
 Navigate To Login Screen Test
 ---------------------------------------------------------------------
 //* Iteration <iteration> başlatıldı
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Login butonuna tıkla
-* Login ekranının açılmasını bekle
-* Login ekranının açıldığını kontrol et
+* Login ekranı açılmalı
 
 Navigate To SignUp Screen Test
 ---------------------------------------------------------------------
 * Iteration <iteration> başlatıldı
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Create anaccount butonuna tıkla
-* Sign Up ekranının açılmasını bekle
-* Sign Up ekranının açıldığını kontrol et
+* Sign Up ekranı açılmalı
 
 
 

@@ -8,6 +8,9 @@
 * Verify that the element with key "LoginScreenLoginButton" is displayed
 * Verify that the element with key "LoginScreenPassword" is displayed
 
+# Login ekranı açılmalı
+* Login ekranı açılmalı
+
 # Login ekranında Login butonuna tıkla
 * Scroll to element with resource-id "login-view-register"
 * Scroll to element with resource-id "login-view-submit"

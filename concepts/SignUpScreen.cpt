@@ -11,6 +11,9 @@ This is a concept file with following syntax for each concept.
 * Verify that the element with key "SignUpScreenFullNameInput" is displayed
 * Verify that the element with key "SignUpScreenUserNameInput" is displayed
 
+# Sign Up ekranı açılmalı
+* Sign Up ekranı açılmalı
+
 # Register butonunun disable olduğunu kontrol et
 * Scroll to element with resource-id "register-view-submit"
 * Verify that the element with key "SignUpScreenRegisterButton" contains "enabled" in attribute "false"

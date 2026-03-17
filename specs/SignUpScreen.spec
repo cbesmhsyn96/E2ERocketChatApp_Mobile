@@ -13,16 +13,14 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 Valid Sign Up Test
 ---------------------------------------------------
 //* Iteration <iteration> başlatıldı
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Create anaccount butonuna tıkla
-* Sign Up ekranının açılmasını bekle
-* Sign Up ekranının açıldığını kontrol et
+* Sign Up ekranı açılmalı
 * Register butonunun disable olduğunu kontrol et
 * Fill the sign up screen with generated user data
 * Register butonunun enable olduğunu kontrol et

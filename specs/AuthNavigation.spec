@@ -7,19 +7,26 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Navigate Between Authentication Screens Test
 -------------------------------------------------------------------
-* Workplace url ekranının elementlerini bekle
-* Connect butonunun enabled özelliğinin false olduğu kontrol et
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
 * Geçerli Workspace URL gir
-* Connect butonunun enabled özelliğinin true olduğunu kontrol et
+* Connect butonu aktif olmalı
 * Connect butonuna tıkla
-* Authentication Selection ekranının açılması bekle
-* Authentication Selection ekranının açıldığı kontrol et
+* Authentication Selection ekranı açılmalı
 * Login butonuna tıkla
-* Login ekranının açılmasını bekle
-* Login ekranının açıldığını kontrol et
+* Login ekranı açılmalı
 * Login ekranında Create an account butonuna tıkla
-* Sign Up ekranının açılmasını bekle
-* Sign Up ekranının açıldığını kontrol et
+* Sign Up ekranı açılmalı
 * SignUp ekranında Geri butonuna tıkla
-* Login ekranının açılmasını bekle
-* Login ekranının açıldığını kontrol et
+* Login ekranı açılmalı
+
+Remember Workspace Test
+-------------------------------------------------------------------
+* Workplace url ekranı açılmalı
+* Connect butonu pasif olmalı
+* Geçerli Workspace URL gir
+* Connect butonu aktif olmalı
+* Connect butonuna tıkla
+* Relaunch app with no reset
+* Authentication Selection ekranı açılmalı
+* Authentication Selection ekranında Workspace URL' i kontrol et
