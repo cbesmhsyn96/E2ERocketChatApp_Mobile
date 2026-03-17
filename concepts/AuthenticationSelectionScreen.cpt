@@ -1,0 +1,19 @@
+Created by huseyinakcan on 15.03.2026
+
+This is a concept file with following syntax for each concept.
+
+# Authentication Selection ekranının açılması bekle
+* Wait until the element with key "AuthenticationSelectionScreenRCHatOpenHeader" is visible
+* Wait until the element with key "AuthenticationSelectionScreenCreateAnAccount" is visible
+* Wait until the element with key "AuthenticationSelectionScreenLoginBtn" is visible
+
+# Authentication Selection ekranının açıldığı kontrol et
+* Verify that the element with key "AuthenticationSelectionScreenRCHatOpenHeader" is displayed
+* Verify that the element with key "AuthenticationSelectionScreenCreateAnAccount" is displayed
+* Verify that the element with key "AuthenticationSelectionScreenLoginBtn" is displayed
+
+# Login butonuna tıkla
+* Click the element with key "AuthenticationSelectionScreenLoginBtn"
+
+# Create anaccount butonuna tıkla
+* Click the element with key "AuthenticationSelectionScreenCreateAnAccount"

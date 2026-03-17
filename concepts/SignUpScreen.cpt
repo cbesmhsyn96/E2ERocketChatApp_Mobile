@@ -1,0 +1,22 @@
+Created by huseyinakcan on 15.03.2026
+
+This is a concept file with following syntax for each concept.
+# Sign Up ekranının açılmasını bekle
+* Wait until the element with key "SignUpScreenHeader" is visible
+* Wait until the element with key "SignUpScreenFullNameInput" is visible
+* Wait until the element with key "SignUpScreenUserNameInput" is visible
+
+# Sign Up ekranının açıldığını kontrol et
+* Verify that the element with key "SignUpScreenHeader" is displayed
+* Verify that the element with key "SignUpScreenFullNameInput" is displayed
+* Verify that the element with key "SignUpScreenUserNameInput" is displayed
+
+# Register butonunun disable olduğunu kontrol et
+* Scroll to element with resource-id "register-view-submit"
+* Verify that the element with key "SignUpScreenRegisterButton" contains "enabled" in attribute "false"
+
+# Register butonunun enable olduğunu kontrol et
+* Verify that the element with key "SignUpScreenRegisterButton" contains "enabled" in attribute "true"
+
+# Register butonuna tıkla
+* Click the element with key "SignUpScreenRegisterButton"

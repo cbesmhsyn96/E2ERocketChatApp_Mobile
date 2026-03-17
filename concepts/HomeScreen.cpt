@@ -1,0 +1,23 @@
+# Home ekranının açılmasını bekle
+* Wait until the element with key "HomeScreenMenuButton" is visible
+* Wait until the element with key "HomeScreenCreateChannelButton" is visible
+* Wait until the element with key "HomeScreenSearchButton" is visible
+//* Wait until the element with key "HomeScreenDirectoryButton" is visible
+
+# Home ekranının açıldığını kontrol et
+* Verify that the element with key "HomeScreenMenuButton" is displayed
+* Verify that the element with key "HomeScreenCreateChannelButton" is displayed
+* Verify that the element with key "HomeScreenSearchButton" is displayed
+
+# Home ekranında menüyü aç
+* Click the element with key "HomeScreenMenuButton"
+* Wait until the element with key "HomeScreenMenuUserName" is visible
+
+# Home ekranında menünün açıldığını kontrol et
+* Verify that the element with key "HomeScreenMenuUserName" is displayed
+
+# Home menüde kayıt olunan kullanıcı adının doğruluğu kontrol edilir
+* Verify that element "HomeScreenMenuUserName" text equals stored value with key "savedUsername"
+
+# Home menüde login olunan kullanıcı adının doğruluğu kontrol edilir
+* Verify that element "HomeScreenMenuUserName" text equals stored value with key "savedUsername"
