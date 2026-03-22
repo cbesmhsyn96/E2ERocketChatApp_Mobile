@@ -1,0 +1,52 @@
+[
+  {
+    "key": "SignUpScreenHeader",
+    "value": "//android.widget.TextView[@content-desc=\"Sign up\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenFullNameInput",
+    "value": "//android.widget.EditText[@content-desc=\"Full name. Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenUserNameInput",
+    "value": "//android.widget.EditText[@content-desc=\"Username. Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenEmailInput",
+    "value": "//android.widget.EditText[@content-desc=\"Email. Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenPasswordInput",
+    "value": "//android.widget.EditText[@content-desc=\"Password. Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenPasswordVerifyInput",
+    "value": "//android.widget.EditText[@content-desc=\"Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenRegisterButton",
+    "value": "//android.widget.Button[@content-desc=\"Register\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenHidePasswdButton",
+    "value": "//android.widget.TextView[@resource-id=\"register-view-password-icon-password\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenHidePasswdSecButton",
+    "value": "//android.widget.TextView[@resource-id=\"register-view-confirm-password-icon-password\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "SignUpScreenBackButton",
+    "value": "//android.widget.Button[@content-desc=\"Back\"]",
+    "type": "xpath"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "key": "LoginScreenHeader",
+    "value": "(//android.widget.TextView[@text=\"Login\"])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "LoginScreenUserNameOrEmail",
+    "value": "//android.widget.EditText[@content-desc=\"Username or email.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "LoginScreenPassword",
+    "value": "//android.widget.EditText[@content-desc=\"Password.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "LoginScreenLoginButton",
+    "value": "//android.widget.Button[@content-desc=\"Login\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "LoginScreenOopsMessage",
+    "value": "//android.widget.TextView[@resource-id=\"android:id/message\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "LoginScreenCreateAnAccButton",
+    "value": "//android.widget.Button[@content-desc=\"Create an account\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  }
+]

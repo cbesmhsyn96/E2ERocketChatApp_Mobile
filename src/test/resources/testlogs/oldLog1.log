@@ -1,0 +1,28 @@
+INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
+INFO  org.example.BaseTest - Launching the Rocket.Chat application
+INFO  org.example.BaseTest - Application launched successfully
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenCreateAnAccount' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
+INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
+INFO  org.example.BaseTest - Launching the Rocket.Chat application
+INFO  org.example.BaseTest - Application launched successfully
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'test' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenInvalidURLMessage' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenInvalidURLMessage' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenInvalidURLMessage' contains 'Invalid URL'
+INFO  org.example.BaseTest - Closing the Android driver session

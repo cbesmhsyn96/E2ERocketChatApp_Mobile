@@ -1,0 +1,72 @@
+[
+  {
+    "key": "HomeScreenMenuButton",
+    "value": "//android.widget.TextView[@text=\"\uE96E\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenCreateChannelButton",
+    "value": "//android.view.ViewGroup[@resource-id=\"rooms-list-view-create-channel\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenSearchButton",
+    "value": "//android.view.ViewGroup[@resource-id=\"rooms-list-view-search\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenDirectoryButton",
+    "value": "//android.view.ViewGroup[@resource-id=\"rooms-list-view-directory\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenMenuUserName",
+    "value": "//android.view.ViewGroup[@resource-id=\"sidebar-close-drawer\"]/android.widget.TextView[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenMenuSettingsButton",
+    "value": "//android.widget.TextView[@text=\"Settings\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenMenuSettingsLogoutButton",
+    "value": "//android.widget.TextView[@text=\"Logout\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenMenuSettingsVerifyLogoutButton",
+    "value": "//android.widget.Button[@resource-id=\"android:id/button1\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenNoMessageContainer",
+    "value": "//android.view.ViewGroup[@resource-id=\"room-item-last-message-container\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenLastUserJoined",
+    "value": "(//android.widget.TextView[contains(@text, 'joined the channel')])[last()]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenChatBoxInputArea",
+    "value": "//android.widget.EditText[@resource-id=\"message-composer-input\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenChatBoxSendMessageButton",
+    "value": "//android.widget.Button[@content-desc=\"Send message\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenChatBoxLastMessage",
+    "value": "(//android.widget.ScrollView[@resource-id='room-view-messages']//android.widget.TextView)[last()]",
+    "type": "xpath"
+  },
+  {
+    "key": "HomeScreenChatBoxBackButton",
+    "value": "//android.widget.Button[@content-desc=\"Back\"]",
+    "type": "xpath"
+  }
+]

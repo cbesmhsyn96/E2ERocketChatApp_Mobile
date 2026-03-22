@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="logDir">src/test/resources/testlogs</Property>
+        <Property name="logPattern">%-5level %c - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+
+        <RollingFile name="TestFileLogger"
+                     fileName="${logDir}/current-log.log"
+                     filePattern="${logDir}/oldLog%i.log">
+
+            <PatternLayout pattern="${logPattern}"/>
+
+            <Policies>
+                <!-- Her uygulama çalıştığında yeni log dosyası oluşturur -->
+                <OnStartupTriggeringPolicy/>
+            </Policies>
+
+            <!-- Eski loglar 10 adede kadar oldLog-1.log, oldLog-2.log ... şeklinde saklanır -->
+            <DefaultRolloverStrategy max="10" fileIndex="min"/>
+        </RollingFile>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${logPattern}"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Logger name="org.example.StepImplementation" level="info" additivity="false">
+            <AppenderRef ref="TestFileLogger"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="org.example.BaseTest" level="info" additivity="false">
+            <AppenderRef ref="TestFileLogger"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="org.reflections" level="error" additivity="false">
+            <AppenderRef ref="TestFileLogger"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="TestFileLogger"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

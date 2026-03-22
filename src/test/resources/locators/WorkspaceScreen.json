@@ -1,0 +1,27 @@
+[
+  {
+    "key": "StartScreenRocketChatLogo",
+    "value": "//android.widget.ImageView",
+    "type": "xpath"
+  },
+  {
+    "key": "StartScreenAddWSHeader",
+    "value": "//android.widget.TextView[@text=\"Add workspace\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "StartScreenWSURLInput",
+    "value": "//android.widget.EditText[@content-desc=\"Workspace URL. Required.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "StartScreenConnectButton",
+    "value": "//android.widget.Button[@content-desc=\"Connect\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "StartScreenInvalidURLMessage",
+    "value": "//android.widget.TextView[@text=\"Invalid URL\"]",
+    "type": "xpath"
+  }
+]

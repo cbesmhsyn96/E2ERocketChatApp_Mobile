@@ -1,0 +1,22 @@
+[
+  {
+    "key": "AuthenticationSelectionScreenLoginBtn",
+    "value": "//android.widget.Button[@content-desc=\"Login\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "AuthenticationSelectionScreenCreateAnAccount",
+    "value": "//android.widget.Button[@content-desc=\"Create an account\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "AuthenticationSelectionScreenRCHatOpenHeader",
+    "value": "(//android.view.ViewGroup[@resource-id=\"workspace-view\"]//android.widget.TextView)[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "AuthenticationSelectionWorkspaceURL",
+    "value": "//android.widget.TextView[@text=\"http://localhost:3001\"]",
+    "type": "xpath"
+  }
+]

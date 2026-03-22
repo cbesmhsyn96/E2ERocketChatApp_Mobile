@@ -1,0 +1,111 @@
+INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
+INFO  org.example.BaseTest - Launching the Rocket.Chat application
+INFO  org.example.BaseTest - Application launched successfully
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenCreateAnAccount' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenLoginBtn' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenCreateAnAccount' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'AuthenticationSelectionScreenCreateAnAccount'
+INFO  org.example.StepImplementation - Waited until the element with key 'SignUpScreenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'SignUpScreenFullNameInput' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'SignUpScreenUserNameInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenFullNameInput' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenUserNameInput' is displayed
+INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-submit
+INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenRegisterButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-name
+INFO  org.example.StepImplementation - Typed 'Lionel Russel' into the element with key 'SignUpScreenFullNameInput'
+INFO  org.example.StepImplementation - Typed 'userLionel_Russel' into the element with key 'SignUpScreenUserNameInput'
+INFO  org.example.StepImplementation - Typed 'testuserpolly.hilll@gmail.com' into the element with key 'SignUpScreenEmailInput'
+INFO  org.example.StepImplementation - Typed 'W8160559c0wf1!' into the element with key 'SignUpScreenPasswordInput'
+INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-confirm-password
+INFO  org.example.StepImplementation - Typed 'W8160559c0wf1!' into the element with key 'SignUpScreenPasswordVerifyInput'
+INFO  org.example.StepImplementation - Sign up form filled with generated data. FullName: Lionel Russel, Username: userLionel_Russel, Email: testuserpolly.hilll@gmail.com
+INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenRegisterButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'SignUpScreenRegisterButton'
+INFO  org.example.StepImplementation - User saved to Excel: testuserpolly.hilll@gmail.com
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenCreateChannelButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenSearchButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenMenuButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenCreateChannelButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenSearchButton' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuUserName' is visible
+INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenMenuUserName' has text 'userLionel_Russel' matching stored value for key 'savedUsername'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenNoMessageContainer' is visible
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenNoMessageContainer'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenLastUserJoined' is visible
+INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenLastUserJoined' has text 'userLionel_Russel' contained stored value for key 'savedUsername'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenChatBoxInputArea'
+INFO  org.example.StepImplementation - Typed 'Hello' into the element with key 'HomeScreenChatBoxInputArea'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenChatBoxSendMessageButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenChatBoxLastMessage' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenChatBoxLastMessage' contains 'Hello'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenChatBoxBackButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenCreateChannelButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenSearchButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenMenuButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenCreateChannelButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenSearchButton' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuSettingsButton' is visible
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuSettingsButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuSettingsLogoutButton' is visible
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuSettingsLogoutButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuSettingsVerifyLogoutButton' is visible
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuSettingsVerifyLogoutButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenCreateAnAccount' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenLoginBtn' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenCreateAnAccount' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'AuthenticationSelectionScreenLoginBtn'
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenUserNameOrEmail' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenLoginButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'testuserjulio.spinka@yahoo.com' into the element with key 'LoginScreenUserNameOrEmail'
+INFO  org.example.StepImplementation - Typed 'Ivj9t05f457l9@' into the element with key 'LoginScreenPassword'
+INFO  org.example.StepImplementation - Login with random user: email='testuserjulio.spinka@yahoo.com', username='userZack_Terry'
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Scrolled to element with resource id: login-view-register
+INFO  org.example.StepImplementation - Scrolled to element with resource id: login-view-submit
+INFO  org.example.StepImplementation - Clicked the element with key 'LoginScreenLoginButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenCreateChannelButton' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenSearchButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenMenuButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenCreateChannelButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenSearchButton' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuUserName' is visible
+INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenMenuUserName' has text 'userZack_Terry' matching stored value for key 'savedUsername'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenNoMessageContainer' is visible
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenNoMessageContainer'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenChatBoxLastMessage' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenChatBoxLastMessage' contains 'Hello'
