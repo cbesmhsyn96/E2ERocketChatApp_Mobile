@@ -1,5 +1,5 @@
-Login Scenarios
-======================================================
+Login Tests
+===========
 
 |iteration|
 |1|
@@ -15,37 +15,35 @@ Login Scenarios
 
 Valid Login Test
 ---------------------------------------------------------------
-* Iteration <iteration> başlatıldı
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication Selection ekranı açılmalı
-* Login butonuna tıkla
-* Login ekranı açılmalı
-* Login ekranında Login butonunun disable olduğunu kontrol et
+* Iteration <iteration> started
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Authentication Selection screen should be displayed
+* Click the Login button
+* Login screen should be displayed
+* Login button should be disabled on the Login screen
 * Login with random Excel user
-* Login ekranında Login butonunun enable olduğunu kontrol et
-* Login ekranında Login butonuna tıkla
-* Home ekranının açılmasını bekle
-* Home ekranının açıldığını kontrol et
-* Home ekranında menüyü aç
-* Home ekranında menünün açıldığını kontrol et
-* Home menüde login olunan kullanıcı adının doğruluğu kontrol edilir
+* Login button should be enabled on the Login screen
+* Click the Login button on the Login screen
+* Home screen should be displayed
+* Open the menu on the Home screen
+* Verify the logged-in username in the Home menu
 
 Invalid Login Test
 ---------------------------------------------------------------
-* Iteration <iteration> başlatıldı
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication Selection ekranı açılmalı
-* Login butonuna tıkla
-* Login ekranı açılmalı
-* Login ekranında Login butonunun disable olduğunu kontrol et
-* Login ekranında Username or email alanına geçersiz değerler gir
-* Login butonuna tıkla
-* Login ekranında uyarı mesajı kontrol edilir
+* Iteration <iteration> started
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Authentication Selection screen should be displayed
+* Click the Login button
+* Login screen should be displayed
+* Login button should be disabled on the Login screen
+* Enter invalid values into the Username or email field on the Login screen
+* Click the Login button
+* Verify the warning message on the Login screen

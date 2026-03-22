@@ -1,9 +1,5 @@
-Specification Heading
-=====================
-Created by huseyinakcan on 15.03.2026
-
-This is an executable specification file which follows markdown syntax.
-Every heading in this file denotes a scenario. Every bulleted point denotes a step.
+Sign Up Tests
+=============
 
 //|iteration|
 //|1|
@@ -12,22 +8,20 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 Valid Sign Up Test
 ---------------------------------------------------
-//* Iteration <iteration> başlatıldı
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication Selection ekranı açılmalı
-* Create anaccount butonuna tıkla
-* Sign Up ekranı açılmalı
-* Register butonunun disable olduğunu kontrol et
+//* Iteration <iteration> started
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Authentication Selection screen should be displayed
+* Click the Create an account button
+* Sign Up screen should be displayed
+* Verify that the Register button is disabled
 * Fill the sign up screen with generated user data
-* Register butonunun enable olduğunu kontrol et
-* Register butonuna tıkla
+* Verify that the Register button is enabled
+* Click the Register button
 * Save created user to Excel
-* Home ekranının açılmasını bekle
-* Home ekranının açıldığını kontrol et
-* Home ekranında menüyü aç
-* Home ekranında menünün açıldığını kontrol et
-* Home menüde kayıt olunan kullanıcı adının doğruluğu kontrol edilir
+* Home screen should be displayed
+* Open the menu on the Home screen and verify
+* Verify the registered username in the Home menu

@@ -1,5 +1,5 @@
-Specification Heading
-=====================
+Authentication Selection Screen Tests
+=====================================
 
 |iteration|
 |1|
@@ -10,34 +10,24 @@ Specification Heading
      
 Navigate To Login Screen Test
 ---------------------------------------------------------------------
-//* Iteration <iteration> başlatıldı
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication Selection ekranı açılmalı
-* Login butonuna tıkla
-* Login ekranı açılmalı
+* Iteration <iteration> started
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Authentication Selection screen should be displayed
+* Click the Login button
+* Login screen should be displayed
 
 Navigate To SignUp Screen Test
 ---------------------------------------------------------------------
-* Iteration <iteration> başlatıldı
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication Selection ekranı açılmalı
-* Create anaccount butonuna tıkla
-* Sign Up ekranı açılmalı
-
-
-
-2. NavigateToSignUpScreenTest
-Amaç: Kullanıcı Sign Up ekranına gidebilmeli.
-Başlangıç ekranı: AuthenticationSelectionScreen
-Adımlar:
-    1. Wait for AuthenticationSelectionScreen elements
-    2. Click “Sign Up” button
-    3. Verify SignUpScreen is displayed
+* Iteration <iteration> started
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Authentication Selection screen should be displayed
+* Click the Create an account button
+* Sign Up screen should be displayed

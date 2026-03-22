@@ -1,20 +1,20 @@
-Specification Heading
-=====================
+Workspace Screen Tests
+======================
      
 Workspace Url Entry Test
 --------------------------------------------------------------------
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçerli Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Authentication selection ekranının açıldığı kontrol et
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter a valid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Verify that the Authentication Selection screen is displayed
 
 Invalid Workspace Url Entry Test
 --------------------------------------------------------------------
-* Workplace url ekranı açılmalı
-* Connect butonu pasif olmalı
-* Geçersiz Workspace URL gir
-* Connect butonu aktif olmalı
-* Connect butonuna tıkla
-* Invalid URL mesajını kontrol et
+* Workplace URL screen should be displayed
+* Connect button should be disabled
+* Enter an invalid Workspace URL
+* Connect button should be enabled
+* Click the Connect button
+* Verify the invalid URL message

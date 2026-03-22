@@ -2,8 +2,8 @@ Created by huseyinakcan on 18.03.2026
 
 This is a concept file with following syntax for each concept.
 
-# Login ekranında Create an account butonuna tıkla
+# Click the Create an account button on the Login screen
 * Click the element with key "LoginScreenCreateAnAccButton"
 
-# SignUp ekranında Geri butonuna tıkla
+# Click the Back button on the Sign Up screen
 * Click the element with key "SignUpScreenBackButton"

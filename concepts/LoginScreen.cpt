@@ -8,24 +8,25 @@
 * Verify that the element with key "LoginScreenLoginButton" is displayed
 * Verify that the element with key "LoginScreenPassword" is displayed
 
-# Login ekranı açılmalı
-* Login ekranı açılmalı
+# Login screen should be displayed
+* Login ekranının açılmasını bekle
+* Login ekranının açıldığını kontrol et
 
-# Login ekranında Login butonuna tıkla
+# Click the Login button on the Login screen
 * Scroll to element with resource-id "login-view-register"
 * Scroll to element with resource-id "login-view-submit"
 * Click the element with key "LoginScreenLoginButton"
 
-# Login ekranında Login butonunun disable olduğunu kontrol et
+# Login button should be disabled on the Login screen
 * Verify that the element with key "LoginScreenLoginButton" contains "enabled" in attribute "false"
 
-# Login ekranında Login butonunun enable olduğunu kontrol et
+# Login button should be enabled on the Login screen
 * Verify that the element with key "LoginScreenLoginButton" contains "enabled" in attribute "true"
 
-# Login ekranında Username or email alanına geçersiz değerler gir
+# Enter invalid values into the Username or email field on the Login screen
 * Type into the element with key "LoginScreenUserNameOrEmail" the text "invalid value"
 * Type into the element with key "LoginScreenPassword" the text "password"
 
-# Login ekranında uyarı mesajı kontrol edilir
+# Verify the warning message on the Login screen
 * Wait until the element with key "LoginScreenOopsMessage" is visible
 * Verify that the element with key "LoginScreenOopsMessage" contains "Your credentials were rejected! Please try again."

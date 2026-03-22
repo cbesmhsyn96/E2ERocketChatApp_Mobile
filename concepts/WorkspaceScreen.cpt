@@ -1,32 +1,32 @@
-# Workplace url ekranı açılmalı
+# Workplace URL screen should be displayed
 * Wait until the element with key "StartScreenRocketChatLogo" is visible
 * Wait until the element with key "StartScreenAddWSHeader" is visible
 * Wait until the element with key "StartScreenWSURLInput" is visible
 
-# Connect butonu pasif olmalı
+# Connect button should be disabled
 * Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "false"
 
-# Connect butonu aktif olmalı
+# Connect button should be enabled
 * Verify that the element with key "StartScreenConnectButton" contains "enabled" in attribute "true"
 
-# Geçerli Workspace URL gir
+# Enter a valid Workspace URL
 * Type into the element with key "StartScreenWSURLInput" the text "http://10.0.2.2:3001"
 
 # Workspace URL in hatırlandığını kontrol et
 * Verify that the element with key "StartScreenWSURLInput" contains "http://10.0.2.2:3001"
 
-# Geçersiz Workspace URL gir
+# Enter an invalid Workspace URL
 * Type into the element with key "StartScreenWSURLInput" the text "test"
 
-# Connect butonuna tıkla
+# Click the Connect button
 * Click the element with key "StartScreenConnectButton"
 
-# Invalid URL mesajını kontrol et
+# Verify the invalid URL message
 * Wait until the element with key "StartScreenInvalidURLMessage" is visible
 * Verify that the element with key "StartScreenInvalidURLMessage" is displayed
 * Verify that the element with key "StartScreenInvalidURLMessage" contains "Invalid URL"
 
-# Authentication selection ekranının açıldığı kontrol et
-* Wait until the element with key "StartScreenLoginBtn" is visible
-* Verify that the element with key "StartScreenLoginBtn" is displayed
-* Verify that the element with key "StartScreenCreateAnAccount" is displayed
+//# Verify that the Authentication Selection screen is displayed
+//* Wait until the element with key "StartScreenLoginBtn" is visible
+//* Verify that the element with key "StartScreenLoginBtn" is displayed
+//* Verify that the element with key "StartScreenCreateAnAccount" is displayed

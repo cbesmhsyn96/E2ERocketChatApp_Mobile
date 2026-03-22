@@ -3,19 +3,20 @@
 * Wait until the element with key "AuthenticationSelectionScreenCreateAnAccount" is visible
 * Wait until the element with key "AuthenticationSelectionScreenLoginBtn" is visible
 
-# Authentication Selection ekranının açıldığı kontrol et
+# Verify that the Authentication Selection screen is displayed
 * Verify that the element with key "AuthenticationSelectionScreenRCHatOpenHeader" is displayed
 * Verify that the element with key "AuthenticationSelectionScreenCreateAnAccount" is displayed
 * Verify that the element with key "AuthenticationSelectionScreenLoginBtn" is displayed
 
-# Authentication Selection ekranı açılmalı
-* Authentication Selection ekranı açılmalı
+# Authentication Selection screen should be displayed
+* Authentication Selection ekranının açılması bekle
+* Verify that the Authentication Selection screen is displayed
 
-# Login butonuna tıkla
+# Click the Login button
 * Click the element with key "AuthenticationSelectionScreenLoginBtn"
 
-# Create anaccount butonuna tıkla
+# Click the Create an account button
 * Click the element with key "AuthenticationSelectionScreenCreateAnAccount"
 
-# Authentication Selection ekranında Workspace URL' i kontrol et
+# Verify the Workspace URL on the Authentication Selection screen
 * Verify that the element with key "AuthenticationSelectionWorkspaceURL" contains "http://localhost:3001"

@@ -9,15 +9,60 @@
 * Verify that the element with key "HomeScreenCreateChannelButton" is displayed
 * Verify that the element with key "HomeScreenSearchButton" is displayed
 
-# Home ekranında menüyü aç
+# Home screen should be displayed
+* Home ekranının açılmasını bekle
+* Home ekranının açıldığını kontrol et
+
+# Open the menu on the Home screen
 * Click the element with key "HomeScreenMenuButton"
 * Wait until the element with key "HomeScreenMenuUserName" is visible
+
+# Click to Home Menu Button
+* Click the element with key "HomeScreenMenuButton"
 
 # Home ekranında menünün açıldığını kontrol et
 * Verify that the element with key "HomeScreenMenuUserName" is displayed
 
-# Home menüde kayıt olunan kullanıcı adının doğruluğu kontrol edilir
+# Open the menu on the Home screen and verify
+* Open the menu on the Home screen
+* Verify that the element with key "HomeScreenMenuUserName" is displayed
+
+# Verify the registered username in the Home menu
 * Verify that element "HomeScreenMenuUserName" text equals stored value with key "savedUsername"
 
-# Home menüde login olunan kullanıcı adının doğruluğu kontrol edilir
+# Verify the logged-in username in the Home menu
 * Verify that element "HomeScreenMenuUserName" text equals stored value with key "savedUsername"
+
+# Wait until the No message area is visible
+* Wait until the element with key "HomeScreenNoMessageContainer" is visible
+
+# Open message box
+* Click the element with key "HomeScreenNoMessageContainer"
+
+# Verify logged-in user in chat box
+* Wait until the element with key "HomeScreenLastUserJoined" is visible
+* Verify that element "HomeScreenLastUserJoined" text contains stored value with key "savedUsername"
+
+# Type <text> into input area in chat box
+* Click the element with key "HomeScreenChatBoxInputArea"
+* Type into the element with key "HomeScreenChatBoxInputArea" the text <text>
+
+# Send message
+* Click the element with key "HomeScreenChatBoxSendMessageButton"
+
+# Validate last message is <text>
+* Wait until the element with key "HomeScreenChatBoxLastMessage" is visible
+* Verify that the element with key "HomeScreenChatBoxLastMessage" contains <text>
+
+# Click Back button in Chat Box
+* Click the element with key "HomeScreenChatBoxBackButton"
+
+# Click Settings button in Home Menu
+* Wait until the element with key "HomeScreenMenuSettingsButton" is visible
+* Click the element with key "HomeScreenMenuSettingsButton"
+
+# Logout from logged-in user
+* Wait until the element with key "HomeScreenMenuSettingsLogoutButton" is visible
+* Click the element with key "HomeScreenMenuSettingsLogoutButton"
+* Wait until the element with key "HomeScreenMenuSettingsVerifyLogoutButton" is visible
+* Click the element with key "HomeScreenMenuSettingsVerifyLogoutButton"
