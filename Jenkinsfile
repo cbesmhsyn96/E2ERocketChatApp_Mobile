@@ -28,6 +28,7 @@ pipeline {
             steps {
                 sh 'npm install -g @getgauge/cli'
                 sh 'gauge -v'
+                sh 'java -version'
             }
         }
 
