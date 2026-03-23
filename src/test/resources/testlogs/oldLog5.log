@@ -17,11 +17,7 @@ INFO  org.example.StepImplementation - Verified that the element with key 'Authe
 INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
 INFO  org.example.StepImplementation - Clicked the element with key 'AuthenticationSelectionScreenLoginBtn'
 INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenHeader' is visible
-INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenUserNameOrEmail' is visible
-INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenLoginButton' is visible
-INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
-INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
-INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -46,6 +42,7 @@ INFO  org.example.StepImplementation - Waited until the element with key 'SignUp
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenFullNameInput' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenUserNameInput' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -70,6 +67,7 @@ INFO  org.example.StepImplementation - Waited until the element with key 'LoginS
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -94,6 +92,7 @@ INFO  org.example.StepImplementation - Waited until the element with key 'SignUp
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenFullNameInput' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenUserNameInput' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -118,6 +117,7 @@ INFO  org.example.StepImplementation - Waited until the element with key 'LoginS
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -142,18 +142,70 @@ INFO  org.example.StepImplementation - Waited until the element with key 'SignUp
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenFullNameInput' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenUserNameInput' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
 INFO  org.example.StepImplementation - Iteration: 4
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenCreateAnAccount' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenLoginBtn' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenCreateAnAccount' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'AuthenticationSelectionScreenLoginBtn'
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenUserNameOrEmail' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenLoginButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
 INFO  org.example.StepImplementation - Iteration: 4
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is visible
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
 INFO  org.example.StepImplementation - Iteration: 5
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenRocketChatLogo' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenAddWSHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'StartScreenWSURLInput' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'false' in attribute 'enabled'
+INFO  org.example.StepImplementation - Typed 'http://10.0.2.2:3001' into the element with key 'StartScreenWSURLInput'
+INFO  org.example.StepImplementation - Verified that the element with key 'StartScreenConnectButton' contains 'true' in attribute 'enabled'
+INFO  org.example.StepImplementation - Clicked the element with key 'StartScreenConnectButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenCreateAnAccount' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'AuthenticationSelectionScreenLoginBtn' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenRCHatOpenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenCreateAnAccount' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'AuthenticationSelectionScreenLoginBtn' is displayed
+INFO  org.example.StepImplementation - Clicked the element with key 'AuthenticationSelectionScreenLoginBtn'
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenHeader' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenUserNameOrEmail' is visible
+INFO  org.example.StepImplementation - Waited until the element with key 'LoginScreenLoginButton' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenHeader' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenLoginButton' is displayed
+INFO  org.example.StepImplementation - Verified that the element with key 'LoginScreenPassword' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session
 INFO  org.example.BaseTest - Setting up scenario: preparing Faker data
 INFO  org.example.BaseTest - Launching the Rocket.Chat application
 INFO  org.example.BaseTest - Application launched successfully
@@ -178,3 +230,4 @@ INFO  org.example.StepImplementation - Waited until the element with key 'SignUp
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenHeader' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenFullNameInput' is displayed
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenUserNameInput' is displayed
+INFO  org.example.BaseTest - Closing the Android driver session

@@ -24,16 +24,16 @@ INFO  org.example.StepImplementation - Verified that the element with key 'SignU
 INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-submit
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenRegisterButton' contains 'false' in attribute 'enabled'
 INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-name
-INFO  org.example.StepImplementation - Typed 'Doyle Bahringer' into the element with key 'SignUpScreenFullNameInput'
-INFO  org.example.StepImplementation - Typed 'userDoyle_Bahringer' into the element with key 'SignUpScreenUserNameInput'
-INFO  org.example.StepImplementation - Typed 'testuserkaroline.greenfelder@gmail.com' into the element with key 'SignUpScreenEmailInput'
-INFO  org.example.StepImplementation - Typed 'Fd3lht7q98177#' into the element with key 'SignUpScreenPasswordInput'
+INFO  org.example.StepImplementation - Typed 'Deandrea Mohr' into the element with key 'SignUpScreenFullNameInput'
+INFO  org.example.StepImplementation - Typed 'userDeandrea_Mohr' into the element with key 'SignUpScreenUserNameInput'
+INFO  org.example.StepImplementation - Typed 'testusercecelia.rogahn@hotmail.com' into the element with key 'SignUpScreenEmailInput'
+INFO  org.example.StepImplementation - Typed 'Pt012a0lcvo79!' into the element with key 'SignUpScreenPasswordInput'
 INFO  org.example.StepImplementation - Scrolled to element with resource id: register-view-confirm-password
-INFO  org.example.StepImplementation - Typed 'Fd3lht7q98177#' into the element with key 'SignUpScreenPasswordVerifyInput'
-INFO  org.example.StepImplementation - Sign up form filled with generated data. FullName: Doyle Bahringer, Username: userDoyle_Bahringer, Email: testuserkaroline.greenfelder@gmail.com
+INFO  org.example.StepImplementation - Typed 'Pt012a0lcvo79!' into the element with key 'SignUpScreenPasswordVerifyInput'
+INFO  org.example.StepImplementation - Sign up form filled with generated data. FullName: Deandrea Mohr, Username: userDeandrea_Mohr, Email: testusercecelia.rogahn@hotmail.com
 INFO  org.example.StepImplementation - Verified that the element with key 'SignUpScreenRegisterButton' contains 'true' in attribute 'enabled'
 INFO  org.example.StepImplementation - Clicked the element with key 'SignUpScreenRegisterButton'
-INFO  org.example.StepImplementation - User saved to Excel: testuserkaroline.greenfelder@gmail.com
+INFO  org.example.StepImplementation - User saved to Excel: testusercecelia.rogahn@hotmail.com
 INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuButton' is visible
 INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenCreateChannelButton' is visible
 INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenSearchButton' is visible
@@ -42,7 +42,14 @@ INFO  org.example.StepImplementation - Verified that the element with key 'HomeS
 INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenSearchButton' is displayed
 INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
 INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenMenuUserName' is visible
-INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenMenuUserName' has text 'userDoyle_Bahringer' matching stored value for key 'savedUsername'
+INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenMenuUserName' has text 'userDeandrea_Mohr' matching stored value for key 'savedUsername'
 INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenMenuButton'
 INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenNoMessageContainer' is visible
 INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenNoMessageContainer'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenLastUserJoined' is visible
+INFO  org.example.StepImplementation - Verified that element with key 'HomeScreenLastUserJoined' has text 'userDeandrea_Mohr' contained stored value for key 'savedUsername'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenChatBoxInputArea'
+INFO  org.example.StepImplementation - Typed 'Hello chat' into the element with key 'HomeScreenChatBoxInputArea'
+INFO  org.example.StepImplementation - Clicked the element with key 'HomeScreenChatBoxSendMessageButton'
+INFO  org.example.StepImplementation - Waited until the element with key 'HomeScreenChatBoxLastMessage' is visible
+INFO  org.example.StepImplementation - Verified that the element with key 'HomeScreenChatBoxLastMessage' contains 'Hello chat'
