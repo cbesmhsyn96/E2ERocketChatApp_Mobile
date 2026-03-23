@@ -26,7 +26,7 @@ pipeline {
 
         stage('Install Gauge') {
             steps {
-                sh 'brew install gauge || true'
+                sh 'npm install -g @getgauge/cli'
                 sh 'gauge -v'
             }
         }
