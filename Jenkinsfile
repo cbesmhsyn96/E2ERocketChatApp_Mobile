@@ -8,7 +8,6 @@ pipeline {
     }
 
     environment {
-        PATH = "/usr/local/bin:${tool 'node18'}/bin:${env.PATH}"
         DOCKER_COMPOSE_DIR = "${WORKSPACE}/rocketchat-test"
         PROJECT_DIR = "${WORKSPACE}"
     }
@@ -22,11 +21,11 @@ pipeline {
 
         stage('Prepare Rocket.Chat') {
             steps {
-                script {
+                withEnv(["PATH=/usr/local/bin:${tool 'node18'}/bin:${tool 'jdk21'}/bin:${tool 'maven3'}/bin:${env.PATH}"]) {
                     dir(DOCKER_COMPOSE_DIR) {
                         sh '''
                         if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                            docker-compose down || true
+                            docker-compose down
                         fi
                         docker-compose up -d
                         '''
@@ -37,22 +36,28 @@ pipeline {
 
         stage('Install Appium') {
             steps {
-                sh 'npm install -g appium || true'
+                withEnv(["PATH=/usr/local/bin:${tool 'node18'}/bin:${tool 'jdk21'}/bin:${tool 'maven3'}/bin:${env.PATH}"]) {
+                    sh 'npm install -g appium'
+                }
             }
         }
 
         stage('Install Gauge') {
             steps {
-                sh 'npm install -g @getgauge/cli || true'
-                sh 'gauge -v'
-                sh 'java -version'
+                withEnv(["PATH=/usr/local/bin:${tool 'node18'}/bin:${tool 'jdk21'}/bin:${tool 'maven3'}/bin:${env.PATH}"]) {
+                    sh 'npm install -g @getgauge/cli'
+                    sh 'gauge -v'
+                    sh 'java -version'
+                }
             }
         }
 
         stage('Run Tests') {
             steps {
-                dir(PROJECT_DIR) {
-                    sh 'mvn clean test'
+                withEnv(["PATH=/usr/local/bin:${tool 'node18'}/bin:${tool 'jdk21'}/bin:${tool 'maven3'}/bin:${env.PATH}"]) {
+                    dir(PROJECT_DIR) {
+                        sh 'mvn clean test'
+                    }
                 }
             }
         }
@@ -67,11 +72,11 @@ pipeline {
 
     post {
         always {
-            script {
+            withEnv(["PATH=/usr/local/bin:${tool 'node18'}/bin:${tool 'jdk21'}/bin:${tool 'maven3'}/bin:${env.PATH}"]) {
                 dir(DOCKER_COMPOSE_DIR) {
                     sh '''
                     if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                        docker-compose down || true
+                        docker-compose down
                     fi
                     '''
                 }
