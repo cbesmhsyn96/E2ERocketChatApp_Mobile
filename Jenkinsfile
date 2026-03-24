@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        PATH = "${tool 'node18'}/bin:${env.PATH}"
+        PATH = "/usr/local/bin:${tool 'node18'}/bin:${env.PATH}" // docker ve docker-compose için
         DOCKER_COMPOSE_DIR = "${WORKSPACE}/rocketchat-test"
         PROJECT_DIR = "${WORKSPACE}"
     }
@@ -25,9 +25,12 @@ pipeline {
                 script {
                     dir(DOCKER_COMPOSE_DIR) {
                         sh '''
-                        if [ -n "$(docker ps -q -f name=rocketchat-test)" ]; then
+                        # Eğer container çalışıyorsa kaldır, çalışmıyorsa hata verme
+                        if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
                             docker-compose down
                         fi
+
+                        # Container'ı başlat
                         docker-compose up -d
                         '''
                     }
@@ -69,7 +72,12 @@ pipeline {
         always {
             script {
                 dir(DOCKER_COMPOSE_DIR) {
-                    sh 'docker-compose down'
+                    sh '''
+                    # Pipeline bittiğinde container varsa kapat
+                    if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
+                        docker-compose down
+                    fi
+                    '''
                 }
             }
             echo 'Pipeline finished.'
