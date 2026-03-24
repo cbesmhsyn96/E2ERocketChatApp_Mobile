@@ -8,7 +8,7 @@ pipeline {
     }
 
     environment {
-        PATH = "/usr/local/bin:${tool 'node18'}/bin:${env.PATH}" // docker ve docker-compose için
+        PATH = "/usr/local/bin:${tool 'node18'}/bin:${env.PATH}"
         DOCKER_COMPOSE_DIR = "${WORKSPACE}/rocketchat-test"
         PROJECT_DIR = "${WORKSPACE}"
     }
@@ -25,12 +25,9 @@ pipeline {
                 script {
                     dir(DOCKER_COMPOSE_DIR) {
                         sh '''
-                        # Eğer container çalışıyorsa kaldır, çalışmıyorsa hata verme
                         if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                            docker-compose down
+                            docker-compose down || true
                         fi
-
-                        # Container'ı başlat
                         docker-compose up -d
                         '''
                     }
@@ -40,13 +37,13 @@ pipeline {
 
         stage('Install Appium') {
             steps {
-                sh 'npm install -g appium'
+                sh 'npm install -g appium || true'
             }
         }
 
         stage('Install Gauge') {
             steps {
-                sh 'npm install -g @getgauge/cli'
+                sh 'npm install -g @getgauge/cli || true'
                 sh 'gauge -v'
                 sh 'java -version'
             }
@@ -73,9 +70,8 @@ pipeline {
             script {
                 dir(DOCKER_COMPOSE_DIR) {
                     sh '''
-                    # Pipeline bittiğinde container varsa kapat
                     if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                        docker-compose down
+                        docker-compose down || true
                     fi
                     '''
                 }
