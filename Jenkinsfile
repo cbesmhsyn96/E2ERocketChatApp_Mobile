@@ -20,12 +20,22 @@ pipeline {
             }
         }
 
+        stage('Check Docker Compose File') {
+            steps {
+                script {
+                    if (!fileExists("${DOCKER_COMPOSE_DIR}/docker-compose.yml")) {
+                        error "docker-compose.yml bulunamadı: ${DOCKER_COMPOSE_DIR}"
+                    }
+                }
+            }
+        }
+
         stage('Prepare Rocket.Chat') {
             steps {
                 dir(DOCKER_COMPOSE_DIR) {
                     sh '''
                     if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                        docker-compose down
+                        docker-compose down || true
                     fi
                     docker-compose up -d
                     '''
@@ -68,7 +78,7 @@ pipeline {
             dir(DOCKER_COMPOSE_DIR) {
                 sh '''
                 if docker ps -q -f name=rocketchat-test >/dev/null 2>&1; then
-                    docker-compose down
+                    docker-compose down || true
                 fi
                 '''
             }
