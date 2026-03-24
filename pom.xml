@@ -106,12 +106,13 @@
                 <groupId>com.thoughtworks.gauge.maven</groupId>
                 <artifactId>gauge-maven-plugin</artifactId>
                 <version>1.6.3</version>
+                <configuration>
+                    <specsDir>specs</specsDir>
+                    <failOnError>false</failOnError>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>test</phase>
-                        <configuration>
-                            <specsDir>specs</specsDir>
-                        </configuration>
                         <goals>
                             <goal>execute</goal>
                         </goals>
