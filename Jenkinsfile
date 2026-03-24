@@ -2,19 +2,36 @@ pipeline {
     agent any
 
     tools {
-        jdk 'jdk11'
+        jdk 'jdk21'
         maven 'maven3'
         nodejs 'node18'
     }
 
     environment {
         PATH = "${tool 'node18'}/bin:${env.PATH}"
+        DOCKER_COMPOSE_DIR = "${WORKSPACE}/rocketchat-test"
+        PROJECT_DIR = "${WORKSPACE}"
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git url: 'https://github.com/cbesmhsyn96/E2ERocketChatApp_Mobile.git', branch: 'main'
+            }
+        }
+
+        stage('Prepare Rocket.Chat') {
+            steps {
+                script {
+                    dir(DOCKER_COMPOSE_DIR) {
+                        sh '''
+                        if [ -n "$(docker ps -q -f name=rocketchat-test)" ]; then
+                            docker-compose down
+                        fi
+                        docker-compose up -d
+                        '''
+                    }
+                }
             }
         }
 
@@ -34,7 +51,9 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'mvn clean test'
+                dir(PROJECT_DIR) {
+                    sh 'mvn clean test'
+                }
             }
         }
 
@@ -48,6 +67,11 @@ pipeline {
 
     post {
         always {
+            script {
+                dir(DOCKER_COMPOSE_DIR) {
+                    sh 'docker-compose down'
+                }
+            }
             echo 'Pipeline finished.'
         }
     }

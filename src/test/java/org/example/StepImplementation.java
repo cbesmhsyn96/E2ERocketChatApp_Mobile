@@ -9,12 +9,12 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import org.apache.logging.log4j.*;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.ExcelUtils;
 
 import java.net.MalformedURLException;
-import java.net.URI;
+
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.time.Duration;
@@ -43,19 +43,19 @@ public class StepImplementation extends BaseTest {
     @Step("Verify that the element with key <searchedKey> is displayed")
     public void verifyElementBySearchedKey(String searchedKey) throws URISyntaxException, MalformedURLException {
         seleniumHelper.waitElementWithVisible(searchedKey);
-        Assertions.assertTrue(seleniumHelper.isDisplayElement(searchedKey));
+        Assertions.assertTrue(seleniumHelper.isDisplayed(searchedKey));
         logger.info("Verified that the element with key '{}' is displayed", searchedKey);
     }
 
     @Step("Verify that the element with key <searchedKey> contains <text> in attribute <attribute>")
     public void verifyAttributeValBySearchedKey(String searchedKey,String attribute, String text) throws URISyntaxException, MalformedURLException {
-        Assertions.assertTrue(seleniumHelper.isContaionsValueOfElement(searchedKey,attribute,text));
+        Assertions.assertTrue(seleniumHelper.containsAttributeValue(searchedKey,attribute,text));
         logger.info("Verified that the element with key '{}' contains '{}' in attribute '{}'", searchedKey, text, attribute);
     }
 
     @Step("Verify that the element with key <searchedKey> contains <text>")
     public void verifyTextBySearchedKey(String searchedKey,String text) throws URISyntaxException, MalformedURLException {
-        Assertions.assertTrue(seleniumHelper.isContaionsTextOfElement(searchedKey,text));
+        Assertions.assertTrue(seleniumHelper.containsText(searchedKey,text));
         logger.info("Verified that the element with key '{}' contains '{}'", searchedKey, text);
     }
 
