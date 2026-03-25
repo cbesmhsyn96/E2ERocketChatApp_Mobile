@@ -66,12 +66,12 @@ pipeline {
             }
         }
 
-        stage('Results') {
-            steps {
-                //junit '**/target/surefire-reports/*.xml'
-                archiveArtifacts artifacts: '**/target/*.html', fingerprint: true
-            }
-        }
+//        stage('Results') {
+//            steps {
+//                junit '**/target/surefire-reports/*.xml'
+//                archiveArtifacts artifacts: '**/target/*.html', fingerprint: true
+//            }
+//        }
     }
 
     post {
